@@ -1,0 +1,20 @@
+#include <stdio.h>
+float area (float d1, float d2)
+{
+    return (d1*d2)/2;
+}
+float peri (float a)
+{
+    return 4*a;
+}
+int main()
+{
+    float dia1,dia2,a;
+    printf("Enter rhombus's two diagonal values: ");
+    scanf("%f %f",&dia1,&dia2);
+    printf("Enter rhombus's side value: ");
+    scanf("%f",&a);
+    printf("The area of rhombus: %.2f\n",area(dia1,dia2));
+    printf("The perimeter of rhombus: %.2f\n",peri(a));
+    return 0;
+}
