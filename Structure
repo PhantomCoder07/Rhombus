@@ -1,0 +1,18 @@
+#include <stdio.h>
+struct rhombus
+{
+    float dia1,dia2,a,area,peri;
+};
+int main()
+{
+    struct rhombus rh;
+    printf("Enter rhombus's two diagonal values: ");
+    scanf("%f %f",&rh.dia1,&rh.dia2);
+    printf("Enter rhombus's side value: ");
+    scanf("%f",&rh.a);
+    rh.area=(rh.dia1*rh.dia2)/2;
+    rh.peri=4*rh.a;
+    printf("The area of rhombus: %.2f\n",rh.area);
+    printf("The perimeter of rhombus: %.2f\n",rh.peri);
+    return 0;
+}
